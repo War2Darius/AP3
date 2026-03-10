@@ -1,0 +1,294 @@
+/* Глобальні скидання та шрифти */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:
+        "Roboto",
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #1e2b37;
+    line-height: 1.5;
+    padding: 0 0 30px 0;
+}
+
+/* Шапка — копіює стиль із зображення */
+.header {
+    background: linear-gradient(92deg, #003153 0%, #1a4b76 100%);
+    color: white;
+    padding: 16px 24px 8px 24px;
+    box-shadow: 0 4px 12px rgba(0, 20, 30, 0.3);
+}
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header-title h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.header-title .sub {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.9;
+    margin-top: 4px;
+}
+
+.official-badge {
+    background: #ffd966;
+    color: #003153;
+    padding: 6px 18px;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Навігаційне меню (як на знімку) */
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+    font-weight: 500;
+}
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+.nav-menu a:hover {
+    border-bottom-color: #ffd966;
+}
+
+/* Панель оперативної інформації (картки) */
+.stats-panel {
+    background: white;
+    border-radius: 20px;
+    margin: 24px 24px 30px 24px;
+    padding: 20px 24px;
+    box-shadow: 0 6px 14px rgba(0, 40, 60, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 24px;
+    border: 1px solid #cfdee9;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f2f6fa;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #003153;
+}
+.stat-item span:first-child {
+    background: #003153;
+    color: white;
+    border-radius: 40px;
+    padding: 4px 16px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-right: 6px;
+}
+.stat-label {
+    font-weight: 400;
+    color: #2e4e6c;
+    margin-left: 6px;
+    font-size: 0.9rem;
+}
+
+.rad-item {
+    background: #e9edf2;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 600;
+    color: #1d3b4f;
+    font-size: 1.2rem;
+}
+
+/* Секція з історією героя (згадка зі скріншоту) */
+.hero-story {
+    background: white;
+    margin: 0 24px 30px 24px;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-left: 8px solid #ffc107;
+}
+.hero-story h3 {
+    font-size: 1.8rem;
+    color: #003153;
+    margin-bottom: 12px;
+}
+.hero-story p {
+    font-size: 1.1rem;
+    color: #2f4858;
+    max-width: 80%;
+}
+
+/* Блок останніх новин / подій (лівий стовпець на зображенні) */
+.content-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 24px 30px 24px;
+}
+.left-panel {
+    flex: 2;
+    min-width: 280px;
+}
+.right-panel {
+    flex: 1;
+    min-width: 260px;
+}
+
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 12px rgba(0, 33, 64, 0.08);
+}
+
+.card h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #003057;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #ffbf3f;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+.event-item,
+.news-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 22px;
+    border-bottom: 1px dashed #cbd5e1;
+    padding-bottom: 16px;
+}
+.event-date,
+.news-date {
+    background: #e6edf6;
+    border-radius: 16px;
+    padding: 8px 12px;
+    min-width: 90px;
+    text-align: center;
+    font-weight: 700;
+    color: #003366;
+}
+.event-desc,
+.news-desc {
+    font-weight: 500;
+    color: #153b50;
+}
+
+/* Категорії посилань (основна частина) */
+.category-block {
+    background: white;
+    border-radius: 28px;
+    padding: 28px;
+    margin: 0 24px 30px 24px;
+    box-shadow: 0 6px 18px rgba(0, 45, 70, 0.1);
+    border: 1px solid #d6e2ef;
+}
+
+.category-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #002b49;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    border-left: 14px solid #ffaa33;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.link-card {
+    background: #f6faff;
+    border-radius: 20px;
+    padding: 16px 18px;
+    transition: all 0.15s;
+    border: 1px solid #d2e1f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+    word-break: break-word;
+    cursor: pointer;
+}
+.link-card:hover {
+    transform: translateY(-3px);
+    background: #e1efff;
+    border-color: #ffaa33;
+    box-shadow: 0 10px 18px -8px #1f4e7a;
+}
+
+.link-card a {
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: #003e6e;
+    text-decoration: none;
+    display: block;
+}
+.link-card a:hover {
+    text-decoration: underline;
+    color: #d45500;
+}
+
+.link-url {
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #abb9c6;
+    margin-top: 40px;
+    border-top: 1px solid #cbdae6;
+    padding-top: 24px;
+}
+
+/* Стиль для маленьких екранів */
+@media (max-width: 600px) {
+    .header-title h1 {
+        font-size: 1.4rem;
+    }
+    .stats-panel {
+        flex-direction: column;
+        align-items: stretch;
+}
+
+    .hero-story p {
+        max-width: 100%;
+    }
+}
